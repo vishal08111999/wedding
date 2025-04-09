@@ -241,7 +241,7 @@ export default function App() {
       <div className="container relative z-10 px-4 py-12 mx-auto sm:px-6 lg:px-8 lg:py-16 flex flex-col min-h-screen justify-center">
         <header className="text-center mb-8">
           <h1
-            className="text-5xl md:text-7xl font-great-vibes text-rose-700 fade-in inline-block mx-auto"
+            className="text-5xl md:text-7xl font-dancing text-rose-700 fade-in inline-block mx-auto"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.1)' }}
           >
             {names}
@@ -349,14 +349,16 @@ export default function App() {
                 <p className="text-rose-600 mb-1 font-raleway">{grandParents}</p>
                 <p className="text-rose-600 mb-4 font-raleway">Request the honour of your gracious presence at the wedding of their Grand Son</p>
                 
-                <div className="flex flex-col md:flex-row justify-center items-center gap-3 mb-4">
-                  <div className="text-3xl font-medium text-rose-700 font-dancing">{groomName}</div>
-                  <div className="text-lg text-rose-600 hidden md:block font-poppins">weds</div>
-                  <div className="text-3xl font-medium text-rose-700 font-dancing">{brideName}</div>
+                <div className="flex flex-col justify-center items-center gap-3 mb-4">
+                    <div className="text-3xl font-medium text-rose-700 font-dancing">{groomName}</div>
+                    <p className="text-rose-600 font-raleway">S/o {groomParents}</p>
+
+                  <div className="text-lg text-rose-600 block font-poppins">weds</div>
+                    <div className="text-3xl font-medium text-rose-700 font-dancing">{brideName}</div>
+                    <p className="text-rose-600 mb-2 font-raleway">D/o {brideParents}</p>
+
                 </div>
                 
-                <p className="text-rose-600 font-raleway">S/o {groomParents}</p>
-                <p className="text-rose-600 mb-2 font-raleway">D/o {brideParents}</p>
               </div>
 
               <h3 className="text-2xl font-playfair text-rose-700 mb-4 text-center">Wedding Events</h3>
